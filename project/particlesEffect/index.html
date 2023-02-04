@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Particles</title>
+</head>
+<body>
+  
+</body>
+<script>
+  let body = document.querySelector('body')
+  body.addEventListener('mousemove', function(e) {
+    let particles = document.createElement('span');
+    particles.style.left = e.offsetX + 'px'
+    particles.style.top = e.offsetY + 'px'
+    
+    let size = Math.random() * 8
+    particles.style.width = 2 + size + 'px'
+    particles.style.height = 2 + size + 'px'
+
+    let particlesEffectValue = Math.random() * 360
+    particles.style.transform = 'rotate('+ particlesEffectValue +'deg)'
+    body.appendChild(particles)
+
+    setTimeout(function() {
+      particles.remove()
+    }, 900)
+  })
+</script>
+</html>

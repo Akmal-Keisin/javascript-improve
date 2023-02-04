@@ -1,0 +1,80 @@
+.backgroundCalculator {
+  width: 60rem;
+  height: 40rem;
+  background-color: rgb(236, 236, 236);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.calculator {
+  width: 27rem;
+  height: 35rem;
+  background-color: grey;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+.resultBar {
+  height: 8rem;
+  width: 21rem;
+  background-color: rgb(61, 61, 61);
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.columnBar {
+  position: absolute;
+  width: 25rem;
+  top: 11rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  width: 5rem;
+  height: 5rem;
+  margin: .1rem .12rem;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+}
+#del {
+  background-color: rgb(111, 21, 21);
+}
+#equal {
+  background-color: rgb(0, 107, 59);
+}
+
+.button:active {
+  transform: scale(.95);
+}
+.operator {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(255, 191, 96);
+  margin-bottom: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.operator:active {
+  transform: scale(.95);
+}

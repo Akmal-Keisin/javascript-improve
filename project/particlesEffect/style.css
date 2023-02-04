@@ -1,0 +1,30 @@
+body {
+  min-height: 100vh;
+  background-color: #000;
+}
+span {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  background-color: transparent;
+  border-radius: 50%;
+  pointer-events: none;
+  /* overflow: hidden; */
+}
+span::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: particlesEffect 2s linear infinite;
+}
+@keyframes particlesEffect {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(300px);
+  }
+}
